@@ -20,8 +20,8 @@ require "sql-maker"
 include SQL::Maker::Helper
 
 q = sql_eq("foo", 10)
-puts q.as_sql #=> "`foo` = ?"
-puts q.bind   #=> [10]
+p q.as_sql #=> "`foo` = ?"
+p q.bind   #=> [10]
 ```
 
 ## Contributing
