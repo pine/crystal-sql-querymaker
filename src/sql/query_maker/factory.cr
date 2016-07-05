@@ -79,7 +79,6 @@ module SQL::QueryMaker::Factory
                       column : String?,
                       values : Array(SQL::Type)) : SQL::QueryMaker::Condition
     as_sql = ->(column : String?, quote_cb : (String -> String)) {
-
       if values.size == 0
         op == "AND" ? "0=1" : "1=1"
       else
