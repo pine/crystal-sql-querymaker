@@ -1,7 +1,10 @@
 name: sql-querymaker
 version: 0.1.0
 
-dependencies: {}
+dependencies:
+  version-freezer:
+    github: pine/crystal-version-freezer
+
 development_dependencies: {}
 
 license: MIT
